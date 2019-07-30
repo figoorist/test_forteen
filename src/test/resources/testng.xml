@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Tests" verbose="5">
+    <test name="test_forteen">
+        <parameter name="siteUrl" value="https://mail.ru/"/>
+        <parameter name="login" value="luisfigo_10"/>
+        <parameter name="password" value="realmadrid"/>
+        <parameter name="destination" value="figourist@mail.ru"/>
+        <parameter name="body" value='Здравствуйте! Вы приняты! ))'/>
+        <classes>
+            <class name="ru.comp.tests.MailTestClass"/>
+        </classes>
+    </test>
+</suite>
