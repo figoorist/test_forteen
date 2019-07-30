@@ -23,6 +23,6 @@ public class MailTestClass {
     @Test
     @Parameters({"destination", "body" })
     public void testSendMail(String destination, String body) {
-        inputMailPage.SendMail(destination, body);
+        inputMailPage.sendMail(destination, body);
     }
 }

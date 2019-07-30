@@ -17,7 +17,7 @@ public class MailHomePage {
     private SelenideElement goToInputMailLink = $(byXpath("//a[contains(text(), 'Перейти во Входящие')]"));
 
 
-    public void SendMail(String destinationEmail, String body) {
+    public void sendMail(String destinationEmail, String body) {
         newMailButton.click();
         destinationEmailInput.sendKeys(destinationEmail);
         switchTo().frame(mailToolFrame);
